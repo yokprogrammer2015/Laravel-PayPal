@@ -90,7 +90,7 @@ return array(
 );
 </pre>
 
-2. Create Controller file file
+2. Create Controller file
 
 Now, Let's Create our controller in <b>app/Http/Controller/PaymentController.php</b>
 
