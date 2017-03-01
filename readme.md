@@ -38,7 +38,7 @@ Laracasts\Flash\FlashServiceProvider::class,
 ];
 
 'aliases' => [
-'Flash' => Laracasts\Flash\Flash:class,
+'Flash' => Laracasts\Flash\Flash::class,
 ];
 </pre>
 
@@ -48,7 +48,6 @@ create paypal config file in config directory with name paypal :-
 <b>config/paypal.php</b>
 
 <pre>
-<?php
 return array(
 // set your paypal credential
 // Below credentials are different for sandbox mode and live mode.
@@ -91,12 +90,11 @@ return array(
 );
 </pre>
 
-2. Create Controller file file
+2. Create Controller file
 
-Now, Let's Create our controller in app/Http/Controller/PaymentController.php
+Now, Let's Create our controller in <b>app/Http/Controller/PaymentController.php</b>
 
 <pre>
-<?php
 
 namespace App\Http\Controllers;
 
@@ -247,7 +245,7 @@ class PaymentController extends Controller
 
 Add Route
 
-Now, add below route to our routes/web.php file
+Now, add below route to our <b>routes/web.php</b> file
 
 <pre>
 // You can use "get" or "post" method below for payment..
