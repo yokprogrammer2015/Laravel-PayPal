@@ -231,7 +231,7 @@ class PaymentController extends Controller
         */
 
         echo '<pre>';
-        print_r($result->payer->payer_info->shipping_address);
+        print_r($result);
         echo '</pre>';
         exit; // DEBUG RESULT.
 
