@@ -93,10 +93,9 @@ return array(
 
 2. Create Controller file file
 
-Now, Let's Create our controller in app/Http/Controller/PaymentController.php
+Now, Let's Create our controller in <b>app/Http/Controller/PaymentController.php</b>
 
 <pre>
-<?php
 
 namespace App\Http\Controllers;
 
@@ -247,7 +246,7 @@ class PaymentController extends Controller
 
 Add Route
 
-Now, add below route to our routes/web.php file
+Now, add below route to our <b>routes/web.php</b> file
 
 <pre>
 // You can use "get" or "post" method below for payment..
