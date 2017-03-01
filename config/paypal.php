@@ -2,8 +2,8 @@
 return array(
 // set your paypal credential
 // Below credentials are different for sandbox mode and live mode.
-    'client_id' => 'AQh25ms4OxoZLQ_ntYYVL4nzPXh1EXEFczV0bqbJfCF661yaxjBHBtI6W86ODdbwIJ2qpZNHqRH3f9er',
-    'secret' => 'EEZ4Dsxb23pOrK6dqH_8G1pCdLYcCKV3Rsnd8T3qnBDrHniv_XtEwjXqpHAeU2thizzkLQCB1F0SEFaW',
+    'client_id' => '',
+    'secret' => '',
 
     /**
      * SDK configuration
