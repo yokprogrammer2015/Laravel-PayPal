@@ -23,7 +23,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Edit File composer.json and add
 
+<pre>
 "require": {
 "laracasts/flash": "^2.0",
 "paypal/rest-api-sdk-php": "*"
 }
+</pre>
