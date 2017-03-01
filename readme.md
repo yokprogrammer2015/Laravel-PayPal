@@ -48,7 +48,6 @@ create paypal config file in config directory with name paypal :-
 <b>config/paypal.php</b>
 
 <pre>
-<?php
 return array(
 // set your paypal credential
 // Below credentials are different for sandbox mode and live mode.
