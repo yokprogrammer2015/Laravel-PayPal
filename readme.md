@@ -228,9 +228,7 @@ class PaymentController extends Controller
         * Get More detail about shipping address like city country name
         */
 
-        echo '<pre>';
         print_r($result);
-        echo '</pre>';
         exit; // DEBUG RESULT.
 
         if ($result->getState() == 'approved') { // payment made
