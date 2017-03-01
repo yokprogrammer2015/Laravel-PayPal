@@ -19,8 +19,9 @@ use PayPal\Exception\PayPalConnectionException;
 use PayPal\Api\PaymentExecution;
 use PayPal\Api\Transaction;
 
-class PaypalController extends Controller
+class PaymentController extends Controller
 {
+
     private $_api_context;
 
     public function __construct()
@@ -62,7 +63,7 @@ class PaypalController extends Controller
             ->setCancelUrl(url('payment/status'));
 
         $payment = new Payment();
-        $payment->setIntent('Agent')
+        $payment->setIntent('Sale')
             ->setPayer($payer)
             ->setRedirectUrls($redirect_urls)
             ->setTransactions(array($transaction));
@@ -132,7 +133,7 @@ class PaypalController extends Controller
         */
 
         echo '<pre>';
-        print_r($result);
+        print_r($result->payer->payer_info->shipping_address);
         echo '</pre>';
         exit; // DEBUG RESULT.
 

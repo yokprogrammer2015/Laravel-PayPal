@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 // You can use "get" or "post" method below for payment..
-Route::get('payment', 'PaypalController@postPayment');
+Route::get('payment', 'PaymentController@postPayment');
 // This must be get method.
-Route::get('payment/status', 'PaypalController@getPaymentStatus');
+Route::get('payment/status', 'PaymentController@getPaymentStatus');
