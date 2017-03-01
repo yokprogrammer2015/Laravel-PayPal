@@ -29,3 +29,15 @@ Edit File composer.json and add
 "paypal/rest-api-sdk-php": "*"
 }
 </pre>
+
+Now, include the service provider within <b>config/app.php</b>
+
+<pre>
+'providers' => [
+Laracasts\Flash\FlashServiceProvider::class,
+];
+
+'aliases' => [
+'Flash' => Laracasts\Flash\Flash:class,
+];
+</pre>
